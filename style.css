@@ -98,6 +98,9 @@
 .left-book,
 .left-ecomers,
 .Education {
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: 1/4;
   background: var(--bg-card);
   padding: 1.5rem;
   border-radius: var(--radius);
@@ -133,12 +136,14 @@
 .bottom-middle{
   width: 50%;
   display: flex;
-  flex-direction: column;
   gap: 2rem;
   margin: 0.5rem; 
+  margin-bottom: 2rem;
 }
  
 .container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
   background: var(--bg-card);
   padding: 2rem;
   border-radius: var(--radius);
